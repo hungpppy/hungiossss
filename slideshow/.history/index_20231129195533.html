@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Slide</title>
+  </head>
+  <body>
+    <div class="slide-show">
+      <div
+        class="top-carousel d-flex justify-content-around align-items-center"
+      >
+        <h3 class="title">
+          <span class="before">People love</span>
+          <span>PixelPro</span>
+        </h3>
+        <div class="carousel-control">
+          <button class="carousel-control-prev" id="prev-button" type="button">
+            <i class="fa-solid fa-arrow-left arrow-icon"></i>
+          </button>
+          <button class="carousel-control-next" id="next-button" type="button">
+            <i class="fa-solid fa-arrow-right arrow-icon"></i>
+          </button>
+        </div>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide w-full">
+        <div class="carousel-indicators">
+          <button
+            class="indicator-item active"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            class="indicator-item"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            class="indicator-item"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            class="indicator-item"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            class="indicator-item"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            class="indicator-item"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            aria-label="Slide 6"
+          ></button>
+        </div>
+        <div class="carousel-inner position-relative">
+          <div
+            class="carousel-wrap d-flex justify-content-between align-items-center"
+            id="carousel-wrap"
+            style="margin-left: 64%"
+          >
+            <div class="carousel-item active">
+              <div class="title">
+                <svg
+                  width="32"
+                  height="30"
+                  viewBox="0 0 32 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.81789 3.21509C0 5.5058 0 8.8586 0 15.5642C0 22.2698 0 25.6226 1.81789 27.9133C2.23508 28.439 2.71398 28.9136 3.24448 29.327C3.44751 29.4852 3.65882 29.6295 3.87996 29.7612L12.8283 10.184C13.2173 9.33288 14.2026 8.92272 15.0883 9.24314L20.7747 11.3003C21.3118 11.4947 21.724 11.93 21.8855 12.4736L27.0933 30C27.4786 29.8096 27.8347 29.5871 28.1684 29.327C28.6989 28.9136 29.1778 28.439 29.595 27.9133C31.4129 25.6226 31.4129 22.2698 31.4129 15.5642C31.4129 8.8586 31.4129 5.5058 29.595 3.21509C29.1778 2.6894 28.6989 2.21484 28.1684 1.80143C25.8568 0 22.4734 0 15.7065 0C8.93957 0 5.55612 0 3.24448 1.80143C2.71398 2.21484 2.23508 2.6894 1.81789 3.21509Z"
+                    fill="#2E2E2E"
+                  />
+                </svg>
+                <span>ICEBERG</span>
+              </div>
+              <div class="content">
+                “With Popwork, I have access to all the important information of
+                my team. With Popwork, I have access to all the important. With
+                Popwork, I have access to all the important information of my
+                team. With Popwork”
+              </div>
+              <div class="author">
+                <img src="./public/images/author-2.png" alt="author-2" />
+                <div class="info">
+                  <div class="name">Aliénor Behaghel</div>
+                  <div class="description">Co Founder at webdesign.gdn</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="title">
+                <svg
+                  width="26"
+                  height="30"
+                  viewBox="0 0 26 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5508 0.627628C15.3832 -0.209209 16.7329 -0.209209 17.5653 0.627628L25.3607 8.46422L17.5299 15.9786C16.6783 16.7958 15.329 16.7642 14.5161 15.9082C13.7033 15.0521 13.7347 13.6957 14.5862 12.8785L16.9905 10.5714H11.7948C7.63523 10.5714 4.2632 13.9613 4.2632 18.1429C4.2632 22.3244 7.63524 25.7143 11.7949 25.7143H22.3107C23.488 25.7143 24.4423 26.6737 24.4423 27.8571C24.4423 29.0406 23.488 30 22.3107 30H11.7949C5.28074 30 0 24.6914 0 18.1429C0 11.5943 5.28073 6.28571 11.7948 6.28571H17.1646L14.5508 3.65809C13.7183 2.82125 13.7183 1.46447 14.5508 0.627628Z"
+                    fill="#2E2E2E"
+                  />
+                </svg>
+                <span>U - Turn</span>
+              </div>
+              <div class="content">
+                “With Popwork, I have access to all the important information of
+                my team. With Popwork, I have access to all the important. With
+                Popwork, I have access to all the important information of my
+                team. With Popwork”
+              </div>
+              <div class="author">
+                <img src="./public/images/author-1.png" alt="author-2" />
+                <div class="info">
+                  <div class="name">Aliénor Behaghel</div>
+                  <div class="description">Co Founder at webdesign.gdn</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="title">
+                <svg
+                  width="32"
+                  height="30"
+                  viewBox="0 0 32 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.81789 3.21509C0 5.5058 0 8.8586 0 15.5642C0 22.2698 0 25.6226 1.81789 27.9133C2.23508 28.439 2.71398 28.9136 3.24448 29.327C3.44751 29.4852 3.65882 29.6295 3.87996 29.7612L12.8283 10.184C13.2173 9.33288 14.2026 8.92272 15.0883 9.24314L20.7747 11.3003C21.3118 11.4947 21.724 11.93 21.8855 12.4736L27.0933 30C27.4786 29.8096 27.8347 29.5871 28.1684 29.327C28.6989 28.9136 29.1778 28.439 29.595 27.9133C31.4129 25.6226 31.4129 22.2698 31.4129 15.5642C31.4129 8.8586 31.4129 5.5058 29.595 3.21509C29.1778 2.6894 28.6989 2.21484 28.1684 1.80143C25.8568 0 22.4734 0 15.7065 0C8.93957 0 5.55612 0 3.24448 1.80143C2.71398 2.21484 2.23508 2.6894 1.81789 3.21509Z"
+                    fill="#2E2E2E"
+                  />
+                </svg>
+                <span>ICEBERG</span>
+              </div>
+              <div class="content">
+                “With Popwork, I have access to all the important information of
+                my team. With Popwork, I have access to all the important. With
+                Popwork, I have access to all the important information of my
+                team. With Popwork”
+              </div>
+              <div class="author">
+                <img src="./public/images/author-2.png" alt="author-2" />
+                <div class="info">
+                  <div class="name">Aliénor Behaghel</div>
+                  <div class="description">Co Founder at webdesign.gdn</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="title">
+                <svg
+                  width="46"
+                  height="30"
+                  viewBox="0 0 46 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M34.2357 30C32.6178 30 31.6209 29.25 29.9923 28.3667C28.3637 27.4834 23.6534 23.927 23.6534 19.5C23.6534 16.4968 22.8824 14.0679 21.5694 12.1321C20.2661 10.2112 18.5006 8.88037 16.6639 7.94092C15.7788 7.48828 14.8578 7.11816 13.9406 6.81226C13.4059 6.63403 13.0957 6.05762 13.3277 5.54224C14.798 2.27393 18.0724 0 21.8762 0C27.0541 0 31.2518 4.2146 31.2518 9.41382C31.2518 10.5261 31.0597 11.5935 30.7069 12.584C32.2013 11.5728 34.0018 10.9827 35.9394 10.9827C41.1172 10.9827 45.3149 15.1973 45.3149 20.3965C45.3149 26.6555 39.8373 30 34.2357 30Z"
+                    fill="#2E2E2E"
+                  />
+                  <path
+                    d="M0 19.6121C0 24.5742 3.25818 28.7087 7.57454 29.6223C8.24076 29.8667 8.95999 30 9.71035 30H24.2771C24.7656 30 24.9783 29.344 24.6053 29.0271C22.0596 26.8643 20.1676 23.8162 20.1676 19.5C20.1676 17.1284 19.5695 15.4011 18.6883 14.1025C17.7972 12.7891 16.5438 11.8074 15.0817 11.0593C13.6061 10.3047 12.004 9.82397 10.4741 9.48315C10.1137 9.4375 9.74706 9.41382 9.37553 9.41382C4.19746 9.41382 0 13.9797 0 19.6121Z"
+                    fill="#2E2E2E"
+                  />
+                </svg>
+                <span>Cloud</span>
+              </div>
+              <div class="content">
+                “With Popwork, I have access to all the important information of
+                my team. With Popwork, I have access to all the important. With
+                Popwork, I have access to all the important information of my
+                team. With Popwork”
+              </div>
+              <div class="author">
+                <img src="./public/images/author-3.png" alt="author-2" />
+                <div class="info">
+                  <div class="name">Aliénor Behaghel</div>
+                  <div class="description">Co Founder at webdesign.gdn</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="title">
+                <svg
+                  width="32"
+                  height="30"
+                  viewBox="0 0 32 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.81789 3.21509C0 5.5058 0 8.8586 0 15.5642C0 22.2698 0 25.6226 1.81789 27.9133C2.23508 28.439 2.71398 28.9136 3.24448 29.327C3.44751 29.4852 3.65882 29.6295 3.87996 29.7612L12.8283 10.184C13.2173 9.33288 14.2026 8.92272 15.0883 9.24314L20.7747 11.3003C21.3118 11.4947 21.724 11.93 21.8855 12.4736L27.0933 30C27.4786 29.8096 27.8347 29.5871 28.1684 29.327C28.6989 28.9136 29.1778 28.439 29.595 27.9133C31.4129 25.6226 31.4129 22.2698 31.4129 15.5642C31.4129 8.8586 31.4129 5.5058 29.595 3.21509C29.1778 2.6894 28.6989 2.21484 28.1684 1.80143C25.8568 0 22.4734 0 15.7065 0C8.93957 0 5.55612 0 3.24448 1.80143C2.71398 2.21484 2.23508 2.6894 1.81789 3.21509Z"
+                    fill="#2E2E2E"
+                  />
+                </svg>
+                <span>ICEBERG</span>
+              </div>
+              <div class="content">
+                “With Popwork, I have access to all the important information of
+                my team. With Popwork, I have access to all the important. With
+                Popwork, I have access to all the important information of my
+                team. With Popwork”
+              </div>
+              <div class="author">
+                <img src="./public/images/author-1.png" alt="author-2" />
+                <div class="info">
+                  <div class="name">Aliénor Behaghel</div>
+                  <div class="description">Co Founder at webdesign.gdn</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="title">
+                <svg
+                  width="32"
+                  height="30"
+                  viewBox="0 0 32 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.81789 3.21509C0 5.5058 0 8.8586 0 15.5642C0 22.2698 0 25.6226 1.81789 27.9133C2.23508 28.439 2.71398 28.9136 3.24448 29.327C3.44751 29.4852 3.65882 29.6295 3.87996 29.7612L12.8283 10.184C13.2173 9.33288 14.2026 8.92272 15.0883 9.24314L20.7747 11.3003C21.3118 11.4947 21.724 11.93 21.8855 12.4736L27.0933 30C27.4786 29.8096 27.8347 29.5871 28.1684 29.327C28.6989 28.9136 29.1778 28.439 29.595 27.9133C31.4129 25.6226 31.4129 22.2698 31.4129 15.5642C31.4129 8.8586 31.4129 5.5058 29.595 3.21509C29.1778 2.6894 28.6989 2.21484 28.1684 1.80143C25.8568 0 22.4734 0 15.7065 0C8.93957 0 5.55612 0 3.24448 1.80143C2.71398 2.21484 2.23508 2.6894 1.81789 3.21509Z"
+                    fill="#2E2E2E"
+                  />
+                </svg>
+                <span>ICEBERG</span>
+              </div>
+              <div class="content">
+                “With Popwork, I have access to all the important information of
+                my team. With Popwork, I have access to all the important. With
+                Popwork, I have access to all the important information of my
+                team. With Popwork”
+              </div>
+              <div class="author">
+                <img src="./public/images/author-1.png" alt="author-2" />
+                <div class="info">
+                  <div class="name">Aliénor Behaghel</div>
+                  <div class="description">Co Founder at webdesign.gdn</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./public/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
